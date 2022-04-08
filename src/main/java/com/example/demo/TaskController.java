@@ -21,10 +21,10 @@ public class TaskController {
         return repo.findAll();
     }
 
-    @GetMapping("/hello")
-    public String getHello() {
-        return "hello";
-    }
+//    @GetMapping("/hello")
+//    public String getHello() {
+//        return "hello";
+//    }
 
     @GetMapping("/{id}")
     public Optional<Task> getTask(@PathVariable Long id) {
